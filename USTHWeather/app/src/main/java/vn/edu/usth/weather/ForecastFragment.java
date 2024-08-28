@@ -10,6 +10,9 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -61,13 +64,17 @@ public class ForecastFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
+        FrameLayout view = (FrameLayout) inflater.inflate(R.layout.fragment_forecast, container, false);
+        view.setBackgroundColor(Color.BLUE);
 
-        //view.setBackgroundColor(Color.parseColor("#20FF0000")); // Example with red color
+        LinearLayout linearLayout = new LinearLayout(view.getContext());
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+        TextView textView = new TextView(view.getContext());
+        String text = "Thursday";
+        textView.setText(text);
 
-        view.setBackgroundColor(Color.parseColor("#2000FF00")); // Example with green color
-        // view.setBackgroundColor(Color.parseColor("#200000FF")); // Example with blue color
-
+        view.addView(linearLayout);
+        linearLayout.addView(textView);
         return view;
     }
 }
