@@ -1,21 +1,168 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ForecastFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/textView"
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="106dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:padding="16dp"
-        android:text="USTH Weather"
-        android:textColor="@android:color/holo_red_light"
-        android:textSize="30sp"
-        />
+        android:layout_height="match_parent"
+        app:layout_anchor="@+id/frameLayout"
+        app:layout_anchorGravity="center">
 
-</FrameLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/myCustomColor_323F8F"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/headerTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USTH Weather"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="610dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft = "10dp"
+        android:layout_marginRight = "10dp"
+        android:layout_marginBottom = "10dp"
+        android:background="@color/myCustomColor_B0B0C9"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- MONDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Mon"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:src="@drawable/sunny" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Partly Cloudy"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingStart="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="24C - 31C"
+                android:textSize="18sp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- TUESDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Tue"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:src="@drawable/sunny" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:text="Showers"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="24C - 30C"
+                android:textSize="18sp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- WEDNESDAY -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="8dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Wed"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:textSize="18sp"
+                android:textColor="#000" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:src="@drawable/sunny" />
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Rain"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:paddingStart="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="22C - 23C"
+                android:textSize="18sp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
