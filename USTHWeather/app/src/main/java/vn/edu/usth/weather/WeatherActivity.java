@@ -2,6 +2,7 @@ package vn.edu.usth.weather;
 
 import android.os.Bundle;
 import android.util.Log;
+
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -11,44 +12,59 @@ import androidx.fragment.app.FragmentTransaction;
 
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "WeatherActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        ForecastFragment firstFragment = new ForecastFragment();
+
+        // Add WeatherFragment to the container
+        WeatherFragment weatherFragment = new WeatherFragment();
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.container,firstFragment);
+        transaction.add(R.id.weather_fragment_container, weatherFragment);
+
+        // Add ForecastFragment to the container
+        ForecastFragment forecastFragment = new ForecastFragment();
+        transaction.add(R.id.forecast_fragment_container, forecastFragment);
+
+        // Commit the transaction
         transaction.commit();
     }
+
     @Override
-    protected void onStart(){
+    protected void onStart() {
         super.onStart();
-        Log.i(TAG,"onStart called");
+        Log.i(TAG, "onStart called");
     }
+
     @Override
-    protected void onResume(){
+    protected void onResume() {
         super.onResume();
-        Log.i(TAG,"onResume called");
+        Log.i(TAG, "onResume called");
     }
+
     @Override
-    protected void onPause(){
+    protected void onPause() {
         super.onPause();
-        Log.i(TAG,"onPause called");
+        Log.i(TAG, "onPause called");
     }
+
     @Override
-    protected void onStop(){
+    protected void onStop() {
         super.onStop();
-        Log.i(TAG,"onStop called");
+        Log.i(TAG, "onStop called");
     }
+
     @Override
-    protected void onDestroy(){
+    protected void onDestroy() {
         super.onDestroy();
-        Log.i(TAG,"onDestroy called");
+        Log.i(TAG, "onDestroy called");
     }
 }
