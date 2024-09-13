@@ -13,5 +13,5 @@ Student Info
 
 * Name: Trần Minh Thành
 * ID: 22BI13412
-* Group ID: *Your Group ID here*
-* Project Name: *Your Project Name here*
+* Group ID: 16
+* Project Name: Recipe Nutrition App
