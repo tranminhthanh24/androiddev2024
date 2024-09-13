@@ -20,7 +20,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:layout_marginLeft = "10dp"
         android:layout_marginRight = "10dp"
@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="15dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -72,7 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="15dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -110,7 +110,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="15dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -148,7 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="15dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -186,7 +186,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="15dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -224,7 +224,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="15dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -262,7 +262,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="20dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -300,7 +300,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="10dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -338,7 +338,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingVertical="40dp">
+            android:paddingVertical="10dp">
 
             <TextView
                 android:layout_width="50dp"
@@ -367,44 +367,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="24C - 26C"
-                android:textSize="18sp"
-                android:textColor="#000" />
-        </LinearLayout>
-
-        <!-- WEDNESDAY 2-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingVertical="40dp">
-
-            <TextView
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:text="Wed"
-                android:paddingStart="5dp"
-                android:paddingEnd="5dp"
-                android:textSize="18sp"
-                android:textColor="#000" />
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="24dp"
-                android:src="@drawable/scattered_thunderstorms" />
-
-            <TextView
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Scattered Thunderstorm"
-                android:textSize="18sp"
-                android:textColor="#000"
-                android:paddingStart="5dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:text="23C - 27C"
                 android:textSize="18sp"
                 android:textColor="#000" />
         </LinearLayout>
