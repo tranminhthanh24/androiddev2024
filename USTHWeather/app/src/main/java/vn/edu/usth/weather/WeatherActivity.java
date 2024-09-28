@@ -1,5 +1,6 @@
 package vn.edu.usth.weather;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
 
@@ -31,6 +32,8 @@ public class WeatherActivity extends AppCompatActivity {
         pager.setAdapter(adapter);
         TabLayout tablayout = findViewById(R.id.tab_layout);
         tablayout.setupWithViewPager(pager);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.musicfile);
+        mediaPlayer.start();
     }
 
     @Override
